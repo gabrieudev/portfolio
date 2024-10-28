@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const Photo = () => {
   return (
-    <div className="relative flex justify-center items-center w-full h-full">
+    <div className="relative flex justify-center items-center w-full h-full mt-14 mb-10">
       {/* circle */}
       <motion.svg
-        className="absolute w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
+        className="absolute w-[300px] xl:w-[530px] h-[300px] xl:h-[530px]"
         fill="transparent"
         viewBox="0 0 506 506"
         xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const Photo = () => {
       </motion.svg>
 
       {/* image */}
-      <div className="relative w-[250px] h-[250px] xl:w-[450px] xl:h-[450px] overflow-hidden rounded-full">
+      <div className="relative w-[290px] h-[290px] xl:w-[520px] xl:h-[520px] overflow-hidden rounded-full">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
@@ -51,7 +51,7 @@ const Photo = () => {
             priority
             quality={100}
             layout="fill"
-            alt="João Gabriel sorrindo, com uma camisa preta em sua casa"
+            alt="João Gabriel com uma camisa preta e a mão no queixo"
             className="object-cover"
           />
         </motion.div>

@@ -2,12 +2,12 @@
 
 import CountUp from "react-countup";
 
-const Stats = ({ publicRepos, followers, totalCommits }) => {
+const Stats = ({ publicRepos, totalCommits }) => {
   const stats = [
     { number: publicRepos, text: "Repositórios criados" },
     { number: 14, text: "Tecnologias utilizadas" },
     { number: totalCommits, text: "Commits realizados" },
-    { number: followers, text: "Seguidores no GitHub" },
+    { number: 3, text: "Anos de estudo" },
   ];
 
   return (

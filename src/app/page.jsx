@@ -11,7 +11,6 @@ export default async function Home() {
   const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
   let totalCommits = 0;
   let publicRepos;
-  let followers;
 
   try {
     const userResponse = await axios.get(
@@ -43,10 +42,8 @@ export default async function Home() {
     );
 
     publicRepos = userData.public_repos;
-    followers = userData.followers;
   } catch (error) {
     publicRepos = undefined;
-    followers = undefined;
   }
 
   return (
@@ -90,11 +87,7 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <Stats
-        publicRepos={publicRepos}
-        followers={followers}
-        totalCommits={totalCommits}
-      />
+      <Stats publicRepos={publicRepos} totalCommits={totalCommits} />
     </section>
   );
 }
