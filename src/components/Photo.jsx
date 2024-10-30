@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const Photo = () => {
+const Photo = ({ avatarUrl }) => {
   return (
     <div className="relative flex justify-center items-center w-full h-full mt-14 mb-10">
       {/* circle */}
@@ -47,7 +47,7 @@ const Photo = () => {
           className="absolute inset-0"
         >
           <Image
-            src="/assets/photo.png"
+            src={avatarUrl}
             priority
             quality={100}
             layout="fill"

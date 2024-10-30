@@ -11,6 +11,7 @@ export default async function Home() {
   const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
   let totalCommits = 0;
   let publicRepos;
+  let avatarUrl;
 
   try {
     const userResponse = await axios.get(
@@ -42,6 +43,7 @@ export default async function Home() {
     );
 
     publicRepos = userData.public_repos;
+    avatarUrl = userData.avatar_url;
   } catch (error) {
     publicRepos = undefined;
   }
@@ -83,7 +85,7 @@ export default async function Home() {
           </div>
 
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
-            <Photo />
+            <Photo avatarUrl={avatarUrl} />
           </div>
         </div>
       </div>
