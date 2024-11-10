@@ -7,31 +7,31 @@ import { motion } from "framer-motion";
 const projects = [
   {
     num: "01",
+    title: "Consulta de gastos parlamentares",
+    description:
+      "API que consulta despesas dos parlamentares através do upload de um arquivo CSV, encontrado no site da câmara dos deputados.",
+    href: "https://github.com/gabrieudev/gastos-parlamentares",
+  },
+  {
+    num: "02",
     title: "Gerenciador de projetos",
     description:
       "Aplicação web full-stack para gerenciar projetos, serviços e custos associados.",
     href: "https://github.com/gabrieudev/budget-bridge",
   },
   {
-    num: "02",
+    num: "03",
     title: "Autenticação e autorização",
     description:
       "Projeto que reproduz o fluxo de autenticação e autorização de usuários no back-end.",
     href: "https://github.com/gabrieudev/auth",
   },
   {
-    num: "03",
+    num: "04",
     title: "Encurtador de URL",
     description:
       "API REST capaz de encurtar uma URL e, caso ela receba uma chamada, redirecionar para a URL original.",
     href: "https://github.com/gabrieudev/url-shortener",
-  },
-  {
-    num: "04",
-    title: "Gerador de senhas",
-    description:
-      "API REST que gera senhas seguras, visando a integração com sistemas que necessitem de tais funcionalidades.",
-    href: "https://github.com/gabrieudev/password-generator",
   },
 ];
 
@@ -50,11 +50,11 @@ const Projects = () => {
           {projects.map((project, index) => {
             return (
               <div
-                className="flex-1 flex flex-col justify-center gap-6 group"
+                className="flex flex-col justify-center flex-1 gap-6 group"
                 key={index}
               >
-                <div className="w-full flex justify-between items-center">
-                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+                <div className="flex items-center justify-between w-full">
+                  <div className="text-5xl font-extrabold text-transparent transition-all duration-500 text-outline group-hover:text-outline-hover">
                     {project.num}
                   </div>
                   <Link
@@ -63,14 +63,14 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <BsArrowRight className="text-primary text-3xl" />
+                    <BsArrowRight className="text-3xl text-primary" />
                   </Link>
                 </div>
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                   {project.title}
                 </h2>
                 <p className="text-white/60">{project.description}</p>
-                <div className="border-b border-white/20 w-full"></div>
+                <div className="w-full border-b border-white/20"></div>
               </div>
             );
           })}
