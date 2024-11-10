@@ -9,7 +9,7 @@ const projects = [
     num: "01",
     title: "Consulta de gastos parlamentares",
     description:
-      "API que consulta despesas dos parlamentares através do upload de um arquivo CSV, encontrado no site da câmara dos deputados.",
+      "API que processa e armazena informações dos deputados através do envio de um arquivo CSV.",
     href: "https://github.com/gabrieudev/gastos-parlamentares",
   },
   {
