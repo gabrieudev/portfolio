@@ -50,9 +50,9 @@ export default async function Home() {
 
   return (
     <section className="h-full">
-      <div className="container mx-auto h-full">
+      <div className="container h-full mx-auto">
         <div className="flex flex-col items-center justify-between xl:flex-row xl:pt-8 xl:pb-24">
-          <div className="text-center xl:text-left order-2 xl:order-none">
+          <div className="order-2 text-center xl:text-left xl:order-none">
             <span className="text-xl">Desenvolvedor Back-End</span>
             <h1 className="h1">
               Olá, me chamo <br />
@@ -64,12 +64,12 @@ export default async function Home() {
               de dados. Sou apaixonado por tecnologia e sempre busco aprimorar
               minhas habilidades para entregar soluções escaláveis e eficientes.
             </p>
-            <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/CV-Gabriel.pdf" download>
+            <div className="flex flex-col items-center gap-8 xl:flex-row">
+              <a href="/Gabriel-CV.pdf" download>
                 <Button
                   variant="outline"
                   size="lg"
-                  className="uppercase flex items-center gap-2"
+                  className="flex items-center gap-2 uppercase"
                 >
                   <span>Baixar CV</span>
                   <FiDownload className="text-xl" />
@@ -84,7 +84,7 @@ export default async function Home() {
             </div>
           </div>
 
-          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+          <div className="order-1 mb-8 xl:order-none xl:mb-0">
             <Photo avatarUrl={avatarUrl} />
           </div>
         </div>
