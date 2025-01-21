@@ -65,7 +65,7 @@ export default async function Home() {
               minhas habilidades para entregar soluções escaláveis e eficientes.
             </p>
             <div className="flex flex-col items-center gap-8 xl:flex-row">
-              <a href="/Gabriel-CV.pdf" download>
+              <a href="/Joao_Gabriel_TI.pdf" download>
                 <Button
                   variant="outline"
                   size="lg"
