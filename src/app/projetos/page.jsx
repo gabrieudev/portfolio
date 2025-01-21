@@ -7,31 +7,31 @@ import { motion } from "framer-motion";
 const projects = [
   {
     num: "01",
+    title: "API para e-commerce",
+    description:
+      "API REST para um e-commerce que utiliza Stripe como gateway de pagamentos e criação de recursos.",
+    href: "https://github.com/gabrieudev/url-shortener",
+  },
+  {
+    num: "02",
     title: "Consulta de gastos parlamentares",
     description:
       "API que processa e armazena informações dos deputados através do envio de um arquivo CSV.",
     href: "https://github.com/gabrieudev/gastos-parlamentares",
   },
   {
-    num: "02",
+    num: "03",
     title: "Gerenciador de projetos",
     description:
       "Aplicação web full-stack para gerenciar projetos, serviços e custos associados.",
     href: "https://github.com/gabrieudev/budget-bridge",
   },
   {
-    num: "03",
+    num: "04",
     title: "Autenticação e autorização",
     description:
       "Projeto que reproduz o fluxo de autenticação e autorização de usuários no back-end.",
     href: "https://github.com/gabrieudev/auth",
-  },
-  {
-    num: "04",
-    title: "Encurtador de URL",
-    description:
-      "API REST capaz de encurtar uma URL e, caso ela receba uma chamada, redirecionar para a URL original.",
-    href: "https://github.com/gabrieudev/url-shortener",
   },
 ];
 
