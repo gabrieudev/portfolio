@@ -64,7 +64,7 @@ export default async function Home() {
                             Sou um desenvolvedor web full-stack apaixonado por
                             criar soluções digitais modernas, escaláveis e
                             focadas em experiência do usuário. Atuo desde a
-                            construção de interfaces intuitivas até a
+                            construção de interfaces até a
                             arquitetura e integração de APIs robustas.
                         </p>
                         <div className="flex flex-col items-center gap-8 xl:flex-row">

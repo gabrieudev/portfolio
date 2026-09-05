@@ -7,7 +7,7 @@ const Stats = ({ publicRepos, totalCommits }) => {
         { number: publicRepos, text: "Repositórios criados" },
         { number: 14, text: "Tecnologias utilizadas" },
         { number: totalCommits, text: "Commits realizados" },
-        { number: 3, text: "Anos de estudo" },
+        { number: 2, text: "Anos de experiência" },
     ];
 
     return (
