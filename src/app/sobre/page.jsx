@@ -8,15 +8,15 @@ import {
     SiTypescript,
     SiMysql,
     SiPostgresql,
-    SiMicrosoftsqlserver,
     SiDocker,
+    SiSqlalchemy,
     SiKeycloak,
-    SiFastify,
     SiExpress,
     SiNodedotjs,
     SiRedis,
     SiMongodb,
     SiLinux,
+    SiN8N
 } from "react-icons/si";
 
 // components
@@ -51,7 +51,7 @@ const work = {
     items: [
         {
             company: "Atos Capital",
-            position: "Estágio em Desenvolvimento Front-End",
+            position: "Desenvolvedor de TI",
             duration: "04/2025 - Atualmente",
         },
     ],
@@ -65,7 +65,7 @@ const education = {
         {
             institution: "Instituto Federal de Sergipe (IFS)",
             degree: "Análise e Desenvolvimento de Sistemas",
-            duration: "03/2023 - 12/2025 (previsão)",
+            duration: "03/2023 - 08/2026",
         },
         {
             institution: "CISCO Networking Academy",
@@ -100,7 +100,7 @@ const skills = {
         { icon: <SiKeycloak />, name: "Keycloak" },
         { icon: <SiMysql />, name: "MySQL" },
         { icon: <SiPostgresql />, name: "PostgreSQL" },
-        { icon: <SiMicrosoftsqlserver />, name: "MS SQL Server" },
+        { icon: <SiSqlalchemy />, name: "MS SQL Server" },
         { icon: <SiDocker />, name: "Docker" },
         { icon: <FaHtml5 />, name: "HTML5" },
         { icon: <FaCss3 />, name: "CSS3" },
@@ -109,12 +109,12 @@ const skills = {
         { icon: <SiTailwindcss />, name: "Tailwind" },
         { icon: <SiNextdotjs />, name: "Next" },
         { icon: <SiTypescript />, name: "TypeScript" },
-        { icon: <SiFastify />, name: "Fastify" },
         { icon: <SiExpress />, name: "Express" },
         { icon: <SiNodedotjs />, name: "Node" },
         { icon: <SiRedis />, name: "Redis" },
         { icon: <SiMongodb />, name: "MongoDB" },
         { icon: <SiLinux />, name: "Linux" },
+        { icon: <SiN8N />, name: "n8n" },
     ],
 };
 
